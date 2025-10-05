@@ -1,8 +1,10 @@
 "use client";
+
 import type { PressEvent } from "@react-aria/interactions";
 import { motion } from "framer-motion";
 import { Button, Link } from "@heroui/react";
 import { Icon } from "@iconify/react";
+
 import { Hole } from "@/components/backgrounds/hole/hole";
 import { DATA } from "@/data";
 
@@ -42,7 +44,7 @@ export const HeroSection = ({
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            Hi, I'm {name} — I build applied AI, deep learning, and data science solutions.
+            Hi, I&apos;m {name} — I build applied AI, deep learning, and data science solutions.
           </motion.h1>
           <motion.p
             animate={{ opacity: 1, y: 0 }}
