@@ -1,11 +1,8 @@
 "use client";
-
 import type { PressEvent } from "@react-aria/interactions";
-
 import { motion } from "framer-motion";
 import { Button, Link } from "@heroui/react";
 import { Icon } from "@iconify/react";
-
 import { Hole } from "@/components/backgrounds/hole/hole";
 import { DATA } from "@/data";
 
@@ -45,10 +42,9 @@ export const HeroSection = ({
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            Hi, I&apos;m {name} &mdash; I design &amp; code modern web
+            Hi, I'm {name} — I design & code modern web
             experiences.
           </motion.h1>
-
           <motion.p
             animate={{ opacity: 1, y: 0 }}
             className="text-foreground-600 text-lg md:text-xl mb-8 leading-relaxed"
@@ -57,7 +53,6 @@ export const HeroSection = ({
           >
             {title}: {subtitle}
           </motion.p>
-
           <motion.div
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
@@ -68,7 +63,7 @@ export const HeroSection = ({
               download
               aria-label="Download CV in PDF format"
               className="w-full sm:w-auto"
-              href="/new CV.pdf"
+              href="/Ahmed_Louay_Araour_resume.pdf"
             >
               <Button
                 fullWidth
