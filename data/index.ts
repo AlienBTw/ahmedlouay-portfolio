@@ -1,212 +1,120 @@
 export const DATA = {
   home: {
     hero: {
-      name: "Sofiane Bahmed",
-      title: "Full stack developer & UI/UX Designer",
+      name: "Ahmed Louay Araour",
+      title: "Final-year Data Science Engineering Student",
       subtitle:
-        "I build fast, accessible and visually engaging web experiences.",
+        "Applied AI · RAG · LLMs · Computer Vision · NLP · Distributed Training on GPU Clusters",
     },
     skills: {
       sectionTitle: "Skills & Expertise",
       sectionDescription:
-        " Specialized in creating modern digital experiences with cutting-edge technologies",
+        "Applied AI engineer with hands-on experience across ML, software, and DevOps.",
       overview: [
-        {
-          name: "UI/UX Design",
-          level: 95,
-          icon: "lucide:layout-dashboard",
-          color: "primary",
-        },
-        {
-          name: "Frontend Development",
-          level: 90,
-          icon: "lucide:code",
-          color: "secondary",
-        },
-        {
-          name: "Mobile Development",
-          level: 85,
-          icon: "lucide:smartphone",
-          color: "success",
-        },
-        {
-          name: "Motion Design",
-          level: 88,
-          icon: "lucide:video",
-          color: "warning",
-        },
+        { name: "AI/ML", level: 90, icon: "lucide:brain", color: "primary", details: ["PyTorch", "Scikit-learn", "TensorFlow", "LLMs", "Computer Vision", "NLP", "MLOps", "Spark"] },
+        { name: "Software", level: 85, icon: "lucide:code-xml", color: "secondary", details: ["Python", "Flask", "React", "JavaScript", "Java", "Spring Boot", "Symfony", "C"] },
+        { name: "DevOps/Data", level: 80, icon: "lucide:server-cog", color: "success", details: ["Docker", "Jenkins", "SQL", "Hadoop", "Git"] },
       ],
     },
-    testimonials: {
-      sectionTitle: "Client Testimonials",
-      sectionDescription: "What clients say about working together",
-      items: [
-        {
-          id: 1,
-          name: "Sarah Johnson",
-          role: "Product Manager at TechNova",
-          content:
-            "The design system created for our SaaS platform reduced our development time by 40% while improving consistency across all our products. The attention to accessibility standards was particularly impressive.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=1",
-        },
-        {
-          id: 2,
-          name: "Michael Chen",
-          role: "CTO at StartUpGrid",
-          content:
-            "Working with this team transformed our mobile app's user retention by 35% in just three months. Their data-driven design approach helped us identify pain points we didn't even know existed.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=2",
-        },
-        {
-          id: 3,
-          name: "David Rodriguez",
-          role: "UX Director at FinTech Global",
-          content:
-            "The dashboard redesign resulted in a 50% reduction in support tickets. Their ability to balance complex financial data with clean visualization is unmatched in the industry.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=3",
-        },
-        {
-          id: 4,
-          name: "Priya Patel",
-          role: "E-commerce Manager at StyleHub",
-          content:
-            "Our conversion rate increased by 28% after implementing their checkout flow redesign. They understood our international user base better than our internal team.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=4",
-        },
-        {
-          id: 5,
-          name: "James Wilson",
-          role: "Head of Product at HealthTrack",
-          content:
-            "The healthcare app we built together received FDA approval largely due to its intuitive patient interface. Their understanding of regulatory requirements saved us months of rework.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=5",
-        },
-        {
-          id: 6,
-          name: "Lisa Nguyen",
-          role: "Marketing Director at EduTech Solutions",
-          content:
-            "Our user onboarding completion rate went from 65% to 92% after their redesign. The way they simplified complex educational concepts into clear interfaces was remarkable.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=6",
-        },
-        {
-          id: 7,
-          name: "Thomas Okafor",
-          role: "Founder at AgriTech Africa",
-          content:
-            "They designed an agricultural monitoring app that works perfectly even in low-connectivity rural areas. Cultural sensitivity and technical innovation in perfect balance.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=7",
-        },
-      ],
-    },
+    testimonials: { sectionTitle: "", sectionDescription: "", items: [] },
   },
   about: {
     profile: {
-      name: "Sofiane Bahmed",
-      title: "Full Stack Developer",
-      image:
-        "https://res.cloudinary.com/devq06psf/image/upload/v1750626923/chic_soba_bkhd8o.png",
+      name: "Ahmed Louay Araour",
+      title: "Final-year Data Science Engineering Student",
+      image: "",
       description: [
-        "I'm a creative full-stack developer with a passion for UI/UX design and clean code. I focus on building beautiful, functional, and high-performance websites and web apps.",
-        "My approach is both technical and aesthetic — I enjoy turning complex problems into elegant user experiences. I work primarily with modern frameworks like React, Vite, and TailwindCSS.",
-        "Outside of code, I enjoy motion design, product strategy, and always pushing the boundaries of front-end development.",
+        "Final-year Data Science Engineering student at ESPRIT, Tunis, seeking a 6‑month PFE in Deep Learning, Machine Learning, Computer Vision, or NLP. I build applied AI systems end‑to‑end: RAG, LLM fine‑tuning, and computer vision, with experience orchestrating distributed training on GPU clusters and deploying robust APIs and pipelines.",
       ],
     },
     education: [
       {
-        title: "High School of Art and Design",
-        date: "2003 - 2006",
-        icon: "mdi:palette",
-        description:
-          "Focused on foundational art and visual design principles, which sparked my early interest in creative problem solving. Explored traditional media, digital illustration, and visual storytelling.",
-      },
-      {
-        title: "University of Technology and Design",
-        date: "2006 - 2010",
+        title: "ESPRIT, Tunis — Engineering Degree in Computer Science (Data Science)",
+        date: "2021 – Present",
         icon: "mdi:school",
-        description:
-          "Earned a Bachelor's degree in Computer Science with a minor in Design. Gained strong skills in software development, user interface engineering, data structures, and human-computer interaction.",
-      },
-      {
-        title: "Institute of Interactive Media",
-        date: "2011 - 2012",
-        icon: "mdi:school-outline",
-        description:
-          "Completed a Master's degree specializing in UX/UI Design and Front-End Development. Merged technical expertise with visual communication to design user-centered digital products and prototypes.",
+        description: "Coursework and projects in applied machine learning, deep learning, NLP, computer vision, big data, and software engineering.",
       },
     ],
     experience: [
       {
-        title: "Creative Director",
-        date: "2018 - Present",
+        title: "AI Engineering Intern — RAG-based Student Assistant",
+        date: "Summer 2025",
         icon: "mdi:briefcase",
         description:
-          "Lead creative and development teams to build digital experiences that combine innovation with user empathy. Oversee branding, UI/UX strategy, and development pipelines for tech startups and clients.",
+          "Architected a Retrieval-Augmented Generation assistant improving access to course information. Built NLP pipelines for semantic search & QA, integrated institutional knowledge via REST APIs, and used vector databases for embedding storage and fast retrieval.",
+        company: "Esprit Inc., Tunis (Tunisia)",
       },
       {
-        title: "Senior UX Engineer",
-        date: "2015 - 2018",
-        icon: "mdi:monitor-dashboard",
+        title: "Computer Vision Intern — DSE Trigger System",
+        date: "Summer 2025",
+        icon: "mdi:camera",
         description:
-          "Designed and implemented high-fidelity web interfaces using React, Figma, and Tailwind. Collaborated cross-functionally with developers and designers to craft intuitive user flows and interactions.",
+          "Designed a Digital Sound Environment with real‑time visual trigger mechanisms. Implemented movement detection/classification to activate audio triggers and built a seamless CV-to-audio integration pipeline.",
+        company: "Greentech, Berlin (Remote)",
       },
       {
-        title: "Front-End Developer & Designer",
-        date: "2012 - 2015",
-        icon: "mdi:code-tags",
+        title: "AI Systems Intern — GPU Cluster for Intel GETi",
+        date: "Summer 2025",
+        icon: "mdi:gpu",
         description:
-          "Developed responsive websites and applications with a focus on accessibility, visual aesthetics, and performance. Delivered pixel-perfect interfaces from wireframes to production code.",
+          "Optimized and parallelized CV model training on multi‑node GPU clusters using Intel GETi, reducing training times by 30%+. Scaled distributed inference, and implemented monitoring/logging for performance and accuracy.",
+        company: "Technozor, Tunis",
+      },
+      {
+        title: "Web Development Intern — Flight Delay Prediction",
+        date: "2024",
+        icon: "mdi:web",
+        description:
+          "Developed a Python/Flask web app to ingest, analyze, and predict flight delays using regression and time‑series ML models.",
+        company: "Voyages Sans Frontières, Tunis",
+      },
+      {
+        title: "Technical Support Intern (Observation)",
+        date: "2023",
+        icon: "mdi:headset",
+        description:
+          "One‑month introductory internship observing and assisting with IT issue resolution in a large corporate environment.",
+        company: "TotalEnergies, Tunis",
       },
     ],
     technologies: {
-      frontend: {
-        description:
-          "I craft dynamic, responsive UIs using modern JavaScript frameworks and CSS tools.",
+      mlAi: {
+        description: "Machine Learning and AI toolset",
         tools: [
-          { name: "React", icon: "logos:react" },
-          { name: "Next.js", icon: "skill-icons:nextjs-dark" },
-          { name: "Tailwind", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-          { name: "HTML5", icon: "logos:html-5" },
-          { name: "CSS3", icon: "logos:css-3" },
-        ],
-      },
-      backend: {
-        description:
-          "I build fast APIs and scalable backends using Node.js, Bun, and Python.",
-        tools: [
-          { name: "Node.js", icon: "logos:nodejs-icon" },
-          { name: "Bun", icon: "logos:bun" },
-          { name: "Python", icon: "logos:python" },
-          { name: "MySQL", icon: "logos:mysql-icon" },
-          { name: "PostgresSQL", icon: "logos:postgresql" },
+          { name: "PyTorch", icon: "logos:pytorch-icon" },
+          { name: "TensorFlow", icon: "logos:tensorflow" },
+          { name: "scikit-learn", icon: "logos:scikit-learn" },
+          { name: "Hugging Face", icon: "simple-icons:huggingface" },
           { name: "OpenAI", icon: "simple-icons:openai" },
+          { name: "Spark", icon: "logos:apachespark" },
         ],
       },
-      uiUx: {
-        description:
-          "I design smooth, user-centered interfaces and high-fidelity prototypes.",
+      cloudData: {
+        description: "Data and cloud platforms",
         tools: [
-          { name: "Figma", icon: "logos:figma" },
-          { name: "Framer", icon: "simple-icons:framer", color: "#0055FF" },
-          { name: "Notion", icon: "logos:notion-icon" },
+          { name: "Docker", icon: "logos:docker-icon" },
+          { name: "Jenkins", icon: "logos:jenkins" },
+          { name: "Hadoop", icon: "logos:apache-hadoop" },
+          { name: "SQL", icon: "mdi:database" },
+          { name: "Git", icon: "mdi:git" },
         ],
       },
-      graphicDesign: {
-        description:
-          "My graphic work includes logos, branding, and posters using Adobe Suite.",
+      web: {
+        description: "Web frameworks and libraries",
         tools: [
-          { name: "Photoshop", icon: "logos:adobe-photoshop" },
-          { name: "Illustrator", icon: "logos:adobe-illustrator" },
+          { name: "Flask", icon: "simple-icons:flask" },
+          { name: "React", icon: "logos:react" },
+          { name: "Spring Boot", icon: "simple-icons:springboot" },
+          { name: "Symfony", icon: "logos:symfony" },
         ],
       },
-      motionDesign: {
-        description:
-          "I animate UI flows and cinematic intros using After Effects and Blender.",
+      languages: {
+        description: "Programming languages",
         tools: [
-          { name: "After Effects", icon: "logos:adobe-after-effects" },
-          { name: "Premiere Pro", icon: "logos:adobe-premiere" },
-          { name: "Blender", icon: "logos:blender" },
+          { name: "Python", icon: "logos:python" },
+          { name: "Java", icon: "logos:java" },
+          { name: "JavaScript", icon: "logos:javascript" },
+          { name: "C", icon: "logos:c" },
         ],
       },
     },
@@ -214,258 +122,151 @@ export const DATA = {
   projects: {
     sectionTitle: "Featured Projects",
     sectionDescription:
-      "A selection of my recent projects showcasing UI/UX design and development expertise",
+      "A selection of applied AI and data science projects.",
     work: [
       {
         id: 1,
-        title: "Digital Banking App",
+        title: "RAG Student Assistant",
         description:
-          "A streamlined digital banking interface emphasizing clarity, speed, and intuitive design.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1-3",
-        ],
-        category: "Applications",
+          "Retrieval-Augmented Generation assistant for students with semantic search, QA, and vector DB retrieval over institutional knowledge.",
+        image: "",
+        gallery: [],
+        category: "Applied AI",
         details:
-          "A feature-rich digital banking app built with React and TailwindCSS, integrating seamless animations via Framer Motion. Designed with a mobile-first approach and a modular component system powered by TypeScript and Vite.",
-        github: "https://github.com",
-        live: "https://example.com",
+          "Built NLP pipelines, REST integrations, and embeddings store enabling real-time, context-aware responses.",
+        github: "",
+        live: "",
         tech: [
-          { name: "React", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-          { name: "Expo", icon: "simple-icons:expo" },
+          { name: "PyTorch", icon: "logos:pytorch-icon" },
+          { name: "FAISS", icon: "simple-icons:faiss" },
+          { name: "Hugging Face", icon: "simple-icons:huggingface" },
+          { name: "Flask", icon: "simple-icons:flask" },
         ],
       },
       {
         id: 2,
-        title: "E-commerce Platform",
+        title: "DSE Trigger System",
         description:
-          "Scalable and responsive online store with dynamic product filtering and intuitive cart management.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2-3",
-        ],
-        category: "Web Development",
+          "Computer vision-driven Digital Sound Environment triggering audio from real-time movement classification.",
+        image: "",
+        gallery: [],
+        category: "Computer Vision",
         details:
-          "A fully functional e-commerce platform built with React and TailwindCSS. Features product listings, advanced filters, cart and checkout system, and a modern UI with responsive design for all devices.",
-        github: "https://github.com",
-        live: "https://example.com",
+          "Real-time movement detection and classification integrated with audio triggers in an interactive pipeline.",
+        github: "",
+        live: "",
         tech: [
-          { name: "React", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-          { name: "PostgreSQL", icon: "logos:postgresql" },
+          { name: "OpenCV", icon: "simple-icons:opencv" },
+          { name: "PyTorch", icon: "logos:pytorch-icon" },
         ],
       },
       {
         id: 3,
-        title: "Travel Booking System",
+        title: "Lung Nodule Detection",
         description:
-          "Comprehensive booking platform for flights, hotels, and rentals with live availability.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3-3",
-        ],
-        category: "Web Development",
+          "Deep learning system to detect and classify lung nodule malignancy from CT scans (with Institut Salah Azaiez).",
+        image: "",
+        gallery: [],
+        category: "Healthcare AI",
         details:
-          "A modern travel booking system built with Next.js and TailwindCSS. Users can search and book flights, hotels, and car rentals with real-time availability and intuitive UI components powered by HeroUI.",
-        github: "https://github.com",
-        live: "https://example.com",
+          "ResNet-based backend API with Flask/Node and React UI for uploads and visualization; clinician-collaborative development.",
+        github: "",
+        live: "",
         tech: [
-          { name: "Next.js", icon: "skill-icons:nextjs-dark" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
+          { name: "PyTorch", icon: "logos:pytorch-icon" },
+          { name: "Flask", icon: "simple-icons:flask" },
+          { name: "React", icon: "logos:react" },
         ],
       },
       {
         id: 4,
-        title: "AI Chat Assistant",
+        title: "Churn Prediction ML Ops",
         description:
-          "Smart customer support assistant with contextual awareness and real-time replies.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=4",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=4",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=4-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=4-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=4-3",
-        ],
-        category: "Applications",
+          "End-to-end MLOps pipeline for churn prediction with automated training, CI/CD, and containerized serving.",
+        image: "",
+        gallery: [],
+        category: "MLOps",
         details:
-          "AI-powered chat assistant developed with React and TailwindCSS. Integrated with OpenAI’s GPT API for contextual conversations, deployed via Vercel with real-time response and adaptive UI.",
-        github: "https://github.com",
-        live: "https://example.com",
+          "Jenkins for CI/CD, Docker for packaging, Flask API for serving; automated retraining and deployment.",
+        github: "",
+        live: "",
         tech: [
-          { name: "React", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "OpenAI API", icon: "simple-icons:openai" },
-          { name: "Vercel", icon: "simple-icons:vercel" },
+          { name: "scikit-learn", icon: "logos:scikit-learn" },
+          { name: "Jenkins", icon: "logos:jenkins" },
+          { name: "Docker", icon: "logos:docker-icon" },
+          { name: "Flask", icon: "simple-icons:flask" },
         ],
       },
       {
         id: 5,
-        title: "Portfolio API & CMS",
+        title: "Intelligent News Agent",
         description:
-          "Headless API backend with admin-friendly CMS capabilities.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=5",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=5",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=5-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=5-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=5-3",
-        ],
-        category: "Backend Services",
+          "AI news agent that filters, summarizes (e.g., T5), and personalizes content with vector search (FAISS).",
+        image: "",
+        gallery: [],
+        category: "NLP/LLMs",
         details:
-          "A modular REST API built with Node.js and Express, powering dynamic portfolio websites. It includes JWT-based authentication, MySQL integration, and a Swagger-documented CMS interface for easy content management by non-developers.",
-        github: "https://github.com",
+          "Transformer summarization + semantic retrieval for tailored news feeds.",
+        github: "",
+        live: "",
         tech: [
-          { name: "Node.js", icon: "logos:nodejs-icon" },
-          { name: "MySQL", icon: "logos:mysql-icon" },
-          { name: "JWT", icon: "simple-icons:jsonwebtokens" },
-          { name: "Swagger", icon: "simple-icons:swagger" },
+          { name: "Transformers", icon: "simple-icons:huggingface" },
+          { name: "FAISS", icon: "simple-icons:faiss" },
+          { name: "Python", icon: "logos:python" },
         ],
       },
       {
         id: 6,
-        title: "Fitness Tracker App",
+        title: "Emotion Classification from Audio",
         description:
-          "Monitor workouts, calorie intake, and goals in one place.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=6",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=6",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=6-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=6-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=6-3",
-        ],
-        category: "Applications",
+          "MFCC feature extraction + hybrid CNN-LSTM model for emotion recognition from audio.",
+        image: "",
+        gallery: [],
+        category: "Audio AI",
         details:
-          "A cross-platform fitness application developed with React Native and styled using TailwindCSS via Expo. It offers calorie tracking, workout logging, analytics via charts, and custom goal-setting—all within a mobile-optimized interface.",
-        github: "https://github.com",
-        live: "https://example.com",
+          "Captures spectral and temporal patterns for high-accuracy emotion classification.",
+        github: "",
+        live: "",
         tech: [
-          { name: "React Native", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "Expo", icon: "simple-icons:expo" },
-        ],
-      },
-      {
-        id: 7,
-        title: "Content Scheduler",
-        description:
-          "Plan, schedule, and automate your social media posts effortlessly.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=7",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=7",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=7-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=7-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=7-3",
-        ],
-        category: "Applications",
-        details:
-          "A productivity app designed for content creators featuring calendar syncing, automated post publishing, rich media previews, and cloud synchronization for seamless cross-device access.",
-        github: "https://github.com",
-        live: "https://example.com",
-        tech: [
-          { name: "Next.js", icon: "skill-icons:nextjs-dark" },
-          { name: "MySQL", icon: "logos:mysql-icon" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-        ],
-      },
-      {
-        id: 8,
-        title: "Real Estate Dashboard",
-        description:
-          "Comprehensive dashboard to manage properties, leads, and sales pipelines effectively.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=8",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=8",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=8-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=8-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=8-3",
-        ],
-        category: "Web Development",
-        details:
-          "An admin panel tailored for real estate professionals featuring interactive data visualizations, lead tracking, and CRM system integrations to streamline client and property management.",
-        github: "https://github.com",
-        live: "https://example.com",
-        tech: [
-          { name: "React", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "Chart.js", icon: "simple-icons:chartdotjs" },
-        ],
-      },
-      {
-        id: 9,
-        title: "Crypto Wallet API",
-        description:
-          "Robust backend API for secure cryptocurrency operations and blockchain interactions.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=9",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=9",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=9-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=9-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=9-3",
-        ],
-        category: "Backend Services",
-        details:
-          "Secure Node.js API supporting Ethereum and Bitcoin transactions. Features transaction signing, wallet address creation, and real-time blockchain event monitoring using Web3.js. Enhanced with hardware security module (HSM) integration for secure key management.",
-        github: "https://github.com",
-        tech: [
-          { name: "Node.js", icon: "logos:nodejs-icon" },
-          { name: "Ethereum", icon: "logos:ethereum" },
-          { name: "Web3.js", icon: "simple-icons:web3dotjs" },
-          { name: "PostgreSQL", icon: "logos:postgresql" },
-          { name: "JWT", icon: "simple-icons:jsonwebtokens" },
-        ],
-      },
-      {
-        id: 10,
-        title: "SaaS Subscription API",
-        description:
-          "Backend API managing SaaS subscriptions, billing, and user accounts.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=10",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=10",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=10-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=10-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=10-3",
-        ],
-        category: "Backend Services",
-        details:
-          "RESTful API supporting SaaS subscription workflows with Stripe integration, usage metering, tiered pricing, webhook handling, trial periods, and analytics. Optimized for high concurrency with Redis caching.",
-        github: "https://github.com",
-        tech: [
-          { name: "Node.js", icon: "logos:nodejs-icon" },
-          { name: "Stripe", icon: "logos:stripe" },
-          { name: "PostgreSQL", icon: "logos:postgresql" },
-          { name: "Redis", icon: "logos:redis" },
-          { name: "JWT", icon: "simple-icons:jsonwebtokens" },
+          { name: "Librosa", icon: "simple-icons:librosa" },
+          { name: "PyTorch", icon: "logos:pytorch-icon" },
         ],
       },
     ],
   },
+  certifications: [
+    { name: "IBM Data Science Specialization" },
+    { name: "IBM AI Engineering" },
+    { name: "NVIDIA Fundamentals of Deep Learning" },
+    { name: "NVIDIA Applications of AI for Anomaly Detection (Ongoing)" },
+  ],
+  awards: [
+    { title: "5th Place - ESPRIT Bal des Projets", date: "June 2023" },
+  ],
+  languages: [
+    { name: "Arabic", level: "Native" },
+    { name: "French", level: "B2" },
+    { name: "English", level: "B2" },
+  ],
   contact: {
     heading:
-      "Have a project in mind? Get in touch and let's create something amazing.",
+      "Available for 6‑month PFE. Let’s connect.",
     location: {
-      mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.017947223557!2d-122.41941508468191!3d37.774929779759245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809cbb69f3ef%3A0x4c80b42c33b6a77d!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1715701234567!5m2!1sen!2sus",
-      address: "San Francisco, CA",
+      mapSrc: "https://www.google.com/maps?q=Tunis%2C+Tunisia&output=embed",
+      address: "Tunis, Tunisia",
     },
+    email: "AhmedLouay.araour@esprit.tn",
+    phone: "+216 97-980-842",
+    links: [
+      { platform: "LinkedIn", url: "https://linkedin.com/in/ahmed-louay-araour", icon: "mdi:linkedin" },
+      { platform: "GitHub", url: "https://github.com/AlienBTw", icon: "mdi:github" },
+      { platform: "CV", url: "/Ahmed_Louay_Araour_resume.pdf", icon: "mdi:file-download" },
+    ],
   },
   morphingTexts: {
-    about: ["Creative", "Passionate", "Developer"] as const,
-    projects: ["My Work", "Creations", "Experiments", "Innovations"] as const,
-    contact: ["Let's", "Build", "Together"] as const,
+    about: ["Applied", "Practical", "AI"] as const,
+    projects: ["RAG", "Vision", "NLP", "MLOps"] as const,
+    contact: ["Let’s", "Work", "Together"] as const,
   },
   navigation: [
     { name: "Home", href: "/", icon: "lucide:home" },
@@ -474,27 +275,18 @@ export const DATA = {
     { name: "Contact", href: "/contact", icon: "lucide:send" },
   ],
   footer: {
-    name: "Sofiane Bahmed",
-    description: "Always interested in new projects and collaborations.",
+    name: "Ahmed Louay Araour",
+    description: "Final-year Data Science Engineering Student. Applied AI, RAG, CV, NLP.",
     contact: {
-      email: "hello@example.com",
-      phone: "+1 (555) 123-4567",
-      location: "San Francisco, CA",
+      email: "AhmedLouay.araour@esprit.tn",
+      phone: "+216 97-980-842",
+      location: "Tunis, Tunisia",
     },
     socialLinks: [
-      { platform: "X", url: "https://x.com", icon: "simple-icons:x" },
-      { platform: "GitHub", url: "https://github.com", icon: "mdi:github" },
-      {
-        platform: "LinkedIn",
-        url: "https://linkedin.com",
-        icon: "mdi:linkedin",
-      },
-      {
-        platform: "Dribbble",
-        url: "https://dribbble.com",
-        icon: "mdi:dribbble",
-      },
+      { platform: "LinkedIn", url: "https://linkedin.com/in/ahmed-louay-araour", icon: "mdi:linkedin" },
+      { platform: "GitHub", url: "https://github.com/AlienBTw", icon: "mdi:github" },
+      { platform: "CV", url: "/Ahmed_Louay_Araour_resume.pdf", icon: "mdi:file-download" },
     ],
-    services: ["UI/UX Design", "Web Development", "Mobile Apps", "Consulting"],
+    services: ["Applied AI", "Computer Vision", "NLP", "MLOps"],
   },
 } as const;
