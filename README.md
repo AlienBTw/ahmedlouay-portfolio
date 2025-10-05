@@ -2,7 +2,6 @@
 
 This is a modern, animated, and fully responsive portfolio template built with **nextjs**, **typescript**, **Tailwind CSS**, and **Framer Motion**. It's designed to be easily customizable and provides a great starting point for developers who want to create a stunning personal portfolio.
 
-<br/>
 <p align="center">
   <a href="https://portfolio-template-seven-murex.vercel.app" target="_blank">
     <img src="./public/github-cover.png" alt="portfolio-template" />
@@ -61,7 +60,33 @@ npm run build
 yarn build
 ```
 
-This will generate a `dist` directory with the optimized and minified files for deployment.
+This will generate an `out` directory with the optimized static files for deployment.
+
+## Deployment to GitHub Pages
+
+This repository is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Setup
+
+1. **Configuration Files:**
+   - `next.config.js` is configured with `output: 'export'` for static export
+   - `basePath` is set to `/ahmedlouay-portfolio` to match the repository name
+   - `.github/workflows/deploy.yml` contains the automated deployment workflow
+
+2. **GitHub Pages Settings:**
+   - Go to Settings > Pages
+   - Under "Build and deployment", Source should be set to "GitHub Actions"
+
+3. **Automatic Deployment:**
+   - Every push to the `main` branch triggers an automatic build and deployment
+   - The workflow builds the Next.js app and deploys the `/out` folder to GitHub Pages
+
+4. **Live Site:**
+   - Your portfolio is live at: **https://alienbtw.github.io/ahmedlouay-portfolio/**
+
+5. **Resume/CV Link:**
+   - Place your resume PDF as `Ahmed_Louay_Araour_resume.pdf` in the `/public` folder
+   - It will be accessible at `/Ahmed_Louay_Araour_resume.pdf` after deployment
 
 ## Customization
 
@@ -83,105 +108,100 @@ Simply update the values in this file to personalize your portfolio.
 
 **How to Add Your CV**
 
-1. `Upload Your CV` : Place your CV file in the `public` folder of the project.
-
-2. `Update the Download Link` : Modify the `href` attribute of the "Download CV" button in the `hero.tsx` file to point to your uploaded CV.
+1. `Upload Your CV`: Place your CV file in the `public` folder of the project.
+2. `Update the Download Link`: Modify the `href` attribute of the "Download CV" button in the `hero.tsx` file to point to your uploaded CV.
 
 Here's an example
 
-```hero.tsx
-            <Link
-              download
-              aria-label="Download CV in PDF format"
-              className="w-full sm:w-auto"
-              href="/your-cv-filename.pdf"
-            >
-              <Button
-                fullWidth
-                aria-label="Downoald CV"
-                color="primary"
-                endContent={<Icon icon="lucide:download" />}
-                size="lg"
-                variant="shadow"
-              >
-                Download CV
-              </Button>
-            </Link>
-
+```jsx
+<Link
+  download
+  aria-label="Download CV in PDF format"
+  className="w-full sm:w-auto"
+  href="/your-cv-filename.pdf"
+>
+  <Button
+    fullWidth
+    aria-label="Downoald CV"
+    color="primary"
+    endContent={<Icon icon="lucide:download" />}
+    size="lg"
+    variant="shadow"
+  >
+    Download CV
+  </Button>
+</Link>
 ```
 
 ## Contact Form Setup (Email.js)
 
 This template uses [Email.js](https://www.emailjs.com/) for handling contact form submissions without a backend. To set it up:
 
-1.  **Create an Email.js account:** If you don't have one, sign up at [Email.js](https://www.emailjs.com/).
+1. **Create an Email.js account:** If you don't have one, sign up at [Email.js](https://www.emailjs.com/).
 
-2.  **Create a new Email Service:** Go to Email Services and add a new service (e.g., Gmail, Outlook). Follow the instructions to connect your email account.
+2. **Create a new Email Service:** Go to Email Services and add a new service (e.g., Gmail, Outlook). Follow the instructions to connect your email account.
 
-3.  **Create a new Email Template:** Go to Email Templates and create a new template. You can use the default template or customize it. Make note of your **Template ID**.
+3. **Create a new Email Template:** Go to Email Templates and create a new template. You can use the default template or customize it. Make note of your **Template ID**.
 
-    Here's an example template you can use:
-    
-```jsx
-<div style="font-family: system-ui, sans-serif, Arial; font-size: 12px">
-  <div>
-    A message by <strong>{{name}}</strong> ({{email}}) has been received with the subject
-    "<strong>{{subject}}</strong>". Kindly respond at your earliest convenience.
-  </div>
+   Here's an example template you can use:
 
-  <div
-    style="
-      margin-top: 20px;
-      padding: 15px 0;
-      border-width: 1px 0;
-      border-style: dashed;
-      border-color: lightgrey;
-    "
-  >
-    <table role="presentation">
-      <tr>
-        <td style="vertical-align: top">
-          <div
-            style="
-              padding: 6px 10px;
-              margin: 0 10px;
-              background-color: aliceblue;
-              border-radius: 5px;
-              font-size: 26px;
-            "
-            role="img"
-          >
-            &#x1F4E7;
-          </div>
-        </td>
-        <td style="vertical-align: top">
-          <div style="color: #2c3e50; font-size: 16px">
-            <strong>{{name}}</strong> — <a href="mailto:{{email}}" style="color: #3498db">{{email}}</a>
-          </div>
-          <div style="color: #999999; font-size: 13px"><em>Subject:</em> {{subject}}</div>
-          <p style="font-size: 16px; margin-top: 10px">{{message}}</p>
-        </td>
-      </tr>
-    </table>
-  </div>
-</div>
+   ```jsx
+   <div style="font-family: system-ui, sans-serif, Arial; font-size: 12px">
+     <div>
+       A message by <strong>{{name}}</strong> ({{email}}) has been received with the subject
+       "<strong>{{subject}}</strong>". Kindly respond at your earliest convenience.
+     </div>
+     <div
+       style="
+         margin-top: 20px;
+         padding: 15px 0;
+         border-width: 1px 0;
+         border-style: dashed;
+         border-color: lightgrey;
+       "
+     >
+       <table role="presentation">
+         <tr>
+           <td style="vertical-align: top">
+             <div
+               style="
+                 padding: 6px 10px;
+                 margin: 0 10px;
+                 background-color: aliceblue;
+                 border-radius: 5px;
+                 font-size: 26px;
+               "
+               role="img"
+             >
+               📧
+             </div>
+           </td>
+           <td style="vertical-align: top">
+             <div style="color: #2c3e50; font-size: 16px">
+               <strong>{{name}}</strong> — <a href="mailto:{{email}}" style="color: #3498db">{{email}}</a>
+             </div>
+             <div style="color: #999999; font-size: 13px"><em>Subject:</em> {{subject}}</div>
+             <p style="font-size: 16px; margin-top: 10px">{{message}}</p>
+           </td>
+         </tr>
+       </table>
+     </div>
+   </div>
+   ```
 
+4. **Get your Public Key:** You can find your Public Key under **Account** -> **API Keys**.
 
-```
+5. **Configure Environment Variables:** Create a `.env.local` file in the root of your project (if it doesn't exist) and add the following environment variables:
 
-4.  **Get your Public Key:** You can find your Public Key under **Account** -> **API Keys**.
+   ```
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-5.  **Configure Environment Variables:** Create a `.env.local` file in the root of your project (if it doesn't exist) and add the following environment variables:
+   Replace `your_service_id`, `your_template_id`, and `your_public_key` with the values from your Email.js account.
 
-    ```
-    NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
-    ```
-
-    Replace `your_service_id`, `your_template_id`, and `your_public_key` with the values from your Email.js account.
-
-6.  **Restart your development server:** After adding the environment variables, restart your development server (`npm run dev` or `yarn dev`) for the changes to take effect.
+6. **Restart your development server:** After adding the environment variables, restart your development server (`npm run dev` or `yarn dev`) for the changes to take effect.
 
 ## Technologies Used
 
@@ -192,7 +212,6 @@ This template uses [Email.js](https://www.emailjs.com/) for handling contact for
 - **[HeroUI](https://www.heroui.com/):** A React UI library for beautiful and accessible components.
 - **[Iconify](https://iconify.design/):** A library for using icons from various icon sets.
 - **[TypeScript](https://www.typescriptlang.org/):** A typed superset of JavaScript.
-
 
 ## License
 
