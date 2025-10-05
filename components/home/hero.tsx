@@ -42,9 +42,10 @@ export const HeroSection = ({
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            Hi, I'm {name} — I design & code modern web
+            Hi, I&apos;m {name} — I design & code modern web
             experiences.
           </motion.h1>
+
           <motion.p
             animate={{ opacity: 1, y: 0 }}
             className="text-foreground-600 text-lg md:text-xl mb-8 leading-relaxed"
@@ -53,6 +54,7 @@ export const HeroSection = ({
           >
             {title}: {subtitle}
           </motion.p>
+
           <motion.div
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
